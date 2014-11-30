@@ -1,6 +1,7 @@
 #include <cmath>
 #include "Polymer.h"
 using namespace std;
+
 #define PEPTIDE 3
 #define GLYCAN 5
 #define L_PEPTIDE 0.01

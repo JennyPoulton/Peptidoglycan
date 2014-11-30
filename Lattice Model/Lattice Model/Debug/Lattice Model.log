@@ -1,17 +1,51 @@
-﻿Build started 30/11/2014 19:49:33.
+﻿Build started 30/11/2014 21:30:34.
      1>Project "C:\Users\Jenny\Peptidoglycan\Lattice Model\Lattice Model\Lattice Model.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Monomer.cpp
-         Monomer.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
+         Main.cpp
+     1>c:\users\jenny\peptidoglycan\lattice model\lattice model\main.cpp(27): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\jenny\peptidoglycan\lattice model\lattice model\polymer.cpp(251): warning C4715: 'Polymer::Bar_Above_Left' : not all control paths return a value
+     1>c:\users\jenny\peptidoglycan\lattice model\lattice model\polymer.cpp(278): warning C4715: 'Polymer::Bar_Above_Right' : not all control paths return a value
+     1>c:\users\jenny\peptidoglycan\lattice model\lattice model\polymer.cpp(305): warning C4715: 'Polymer::Bar_Below_Left' : not all control paths return a value
+     1>c:\users\jenny\peptidoglycan\lattice model\lattice model\polymer.cpp(332): warning C4715: 'Polymer::Bar_Below_Right' : not all control paths return a value
+     1>c:\users\jenny\peptidoglycan\lattice model\lattice model\polymer.cpp(463): warning C4715: 'Polymer::Bar_Above_LeftG' : not all control paths return a value
+     1>c:\users\jenny\peptidoglycan\lattice model\lattice model\polymer.cpp(490): warning C4715: 'Polymer::Bar_Above_RightG' : not all control paths return a value
+     1>c:\users\jenny\peptidoglycan\lattice model\lattice model\polymer.cpp(518): warning C4715: 'Polymer::Bar_Below_RightG' : not all control paths return a value
+     1>c:\users\jenny\peptidoglycan\lattice model\lattice model\polymer.cpp(546): warning C4715: 'Polymer::Bar_Below_LeftG' : not all control paths return a value
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Jenny\Peptidoglycan\Lattice Model\Debug\Lattice Model.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Jenny\Peptidoglycan\Lattice Model\Debug\Lattice Model.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Jenny\Peptidoglycan\Lattice Model\Debug\Lattice Model.lib" /MACHINE:X86 Debug\Glycan.obj
          Debug\Main.obj
          Debug\Monomer.obj
          Debug\Peptide.obj
          Debug\Polymer.obj
-         Lattice Model.vcxproj -> C:\Users\Jenny\Peptidoglycan\Lattice Model\Debug\Lattice Model.exe
-     1>Done Building Project "C:\Users\Jenny\Peptidoglycan\Lattice Model\Lattice Model\Lattice Model.vcxproj" (Build target(s)).
+     1>Polymer.obj : error LNK2005: "public: __thiscall Polymer::Polymer(void)" (??0Polymer@@QAE@XZ) already defined in Main.obj
+     1>Polymer.obj : error LNK2005: "private: int __thiscall Polymer::Bar_Above_Left(int,int)" (?Bar_Above_Left@Polymer@@AAEHHH@Z) already defined in Main.obj
+     1>Polymer.obj : error LNK2005: "private: int __thiscall Polymer::Bar_Above_LeftG(int,int)" (?Bar_Above_LeftG@Polymer@@AAEHHH@Z) already defined in Main.obj
+     1>Polymer.obj : error LNK2005: "private: int __thiscall Polymer::Bar_Above_Right(int,int)" (?Bar_Above_Right@Polymer@@AAEHHH@Z) already defined in Main.obj
+     1>Polymer.obj : error LNK2005: "private: int __thiscall Polymer::Bar_Above_RightG(int,int)" (?Bar_Above_RightG@Polymer@@AAEHHH@Z) already defined in Main.obj
+     1>Polymer.obj : error LNK2005: "private: int __thiscall Polymer::Bar_Below_Left(int,int)" (?Bar_Below_Left@Polymer@@AAEHHH@Z) already defined in Main.obj
+     1>Polymer.obj : error LNK2005: "private: int __thiscall Polymer::Bar_Below_LeftG(int,int)" (?Bar_Below_LeftG@Polymer@@AAEHHH@Z) already defined in Main.obj
+     1>Polymer.obj : error LNK2005: "private: int __thiscall Polymer::Bar_Below_Right(int,int)" (?Bar_Below_Right@Polymer@@AAEHHH@Z) already defined in Main.obj
+     1>Polymer.obj : error LNK2005: "private: int __thiscall Polymer::Bar_Below_RightG(int,int)" (?Bar_Below_RightG@Polymer@@AAEHHH@Z) already defined in Main.obj
+     1>Polymer.obj : error LNK2005: "public: void __thiscall Polymer::Find_Energy_To_Stretch_Glycan(double)" (?Find_Energy_To_Stretch_Glycan@Polymer@@QAEXN@Z) already defined in Main.obj
+     1>Polymer.obj : error LNK2005: "public: void __thiscall Polymer::Find_Energy_To_Stretch_Peptide(double)" (?Find_Energy_To_Stretch_Peptide@Polymer@@QAEXN@Z) already defined in Main.obj
+     1>Polymer.obj : error LNK2005: "public: void __thiscall Polymer::Find_Force_Glycans(double)" (?Find_Force_Glycans@Polymer@@QAEXN@Z) already defined in Main.obj
+     1>Polymer.obj : error LNK2005: "public: void __thiscall Polymer::Find_Force_Peptides(double)" (?Find_Force_Peptides@Polymer@@QAEXN@Z) already defined in Main.obj
+     1>Polymer.obj : error LNK2005: "public: void __thiscall Polymer::Find_Max_Min_Length(void)" (?Find_Max_Min_Length@Polymer@@QAEXXZ) already defined in Main.obj
+     1>Polymer.obj : error LNK2005: "private: void __thiscall Polymer::Find_Spring_Constant_Glycan_Direction(void)" (?Find_Spring_Constant_Glycan_Direction@Polymer@@AAEXXZ) already defined in Main.obj
+     1>Polymer.obj : error LNK2005: "private: void __thiscall Polymer::Find_Spring_Constant_Peptide_Direction(void)" (?Find_Spring_Constant_Peptide_Direction@Polymer@@AAEXXZ) already defined in Main.obj
+     1>Polymer.obj : error LNK2005: "public: double __thiscall Polymer::Return_Energy_To_Stretch_Glycan(void)" (?Return_Energy_To_Stretch_Glycan@Polymer@@QAENXZ) already defined in Main.obj
+     1>Polymer.obj : error LNK2005: "public: double __thiscall Polymer::Return_Energy_To_Stretch_Peptide(void)" (?Return_Energy_To_Stretch_Peptide@Polymer@@QAENXZ) already defined in Main.obj
+     1>Polymer.obj : error LNK2005: "public: double __thiscall Polymer::Return_Glycan_Length(int,int)" (?Return_Glycan_Length@Polymer@@QAENHH@Z) already defined in Main.obj
+     1>Polymer.obj : error LNK2005: "public: double __thiscall Polymer::Return_Peptide_Length(int,int)" (?Return_Peptide_Length@Polymer@@QAENHH@Z) already defined in Main.obj
+     1>Polymer.obj : error LNK2005: "public: double __thiscall Polymer::Return_Splitter_Glycan(void)" (?Return_Splitter_Glycan@Polymer@@QAENXZ) already defined in Main.obj
+     1>Polymer.obj : error LNK2005: "public: double __thiscall Polymer::Return_Splitter_Peptide(void)" (?Return_Splitter_Peptide@Polymer@@QAENXZ) already defined in Main.obj
+     1>Polymer.obj : error LNK2005: "public: double __thiscall Polymer::Return_Spring_Constant_Glycan_Direction(void)" (?Return_Spring_Constant_Glycan_Direction@Polymer@@QAENXZ) already defined in Main.obj
+     1>Polymer.obj : error LNK2005: "public: double __thiscall Polymer::Return_Spring_Constant_Peptide_Direction(void)" (?Return_Spring_Constant_Peptide_Direction@Polymer@@QAENXZ) already defined in Main.obj
+     1>Polymer.obj : error LNK2005: "private: void __thiscall Polymer::Set_Joins(void)" (?Set_Joins@Polymer@@AAEXXZ) already defined in Main.obj
+     1>C:\Users\Jenny\Peptidoglycan\Lattice Model\Debug\Lattice Model.exe : fatal error LNK1169: one or more multiply defined symbols found
+     1>Done Building Project "C:\Users\Jenny\Peptidoglycan\Lattice Model\Lattice Model\Lattice Model.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:01.69
+Time Elapsed 00:00:01.30

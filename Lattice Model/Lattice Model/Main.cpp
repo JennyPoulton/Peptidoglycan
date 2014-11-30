@@ -1,7 +1,8 @@
-#include "Polymer.h"
+#include "Polymer.cpp"
 #define L_PEPTIDE 0.01
 #define L_GLYCAN 0.01
 using namespace std;
+
 
 #include<iostream>
 #include<fstream>
@@ -29,12 +30,12 @@ int main(void)
 
 	/*for(int dist = 0; dist < 1000; dist = dist + 1)
 	{
-		
-		StaphAureous.Find_Energy_To_Stretch_Peptide(dist*L_PEPTIDE);
-		StaphAureous.Find_Energy_To_Stretch_Glycan(dist*L_GLYCAN);
-		OUTPUT << dist*L_GLYCAN << "\t" << StaphAureous.Return_Energy_To_Stretch_Glycan() << "\t" << dist*L_PEPTIDE << "\t" << StaphAureous.Return_Energy_To_Stretch_Peptide() << "\t" << dist*sqrt(L_PEPTIDE*L_PEPTIDE+L_GLYCAN*L_GLYCAN) << "\t" << sqrt(pow(StaphAureous.Return_Energy_To_Stretch_Peptide(),2) + pow(StaphAureous.Return_Energy_To_Stretch_Glycan(),2)) << endl;
+
+	StaphAureous.Find_Energy_To_Stretch_Peptide(dist*L_PEPTIDE);
+	StaphAureous.Find_Energy_To_Stretch_Glycan(dist*L_GLYCAN);
+	OUTPUT << dist*L_GLYCAN << "\t" << StaphAureous.Return_Energy_To_Stretch_Glycan() << "\t" << dist*L_PEPTIDE << "\t" << StaphAureous.Return_Energy_To_Stretch_Peptide() << "\t" << dist*sqrt(L_PEPTIDE*L_PEPTIDE+L_GLYCAN*L_GLYCAN) << "\t" << sqrt(pow(StaphAureous.Return_Energy_To_Stretch_Peptide(),2) + pow(StaphAureous.Return_Energy_To_Stretch_Glycan(),2)) << endl;
 	}*/
-	
+
 	int Frequency_At_Length_Peptide[100];
 	int Frequency_At_Length_Glycan[100];
 
@@ -45,14 +46,14 @@ int main(void)
 			Frequency_At_Length_Peptide[(int)(StaphAureous.Return_Peptide_Length(i, j) / StaphAureous.Return_Splitter_Peptide())]++;
 			Frequency_At_Length_Glycan[(int)(StaphAureous.Return_Glycan_Length(i, j) / StaphAureous.Return_Splitter_Glycan())]++;
 		}
-		
+
 	}
 
 	for (int i = 0; i < 100; i++)
 	{
 		OUTPUT << i*StaphAureous.Return_Splitter_Peptide() << "\t" << Frequency_At_Length_Peptide[i] << "\t" << i*StaphAureous.Return_Splitter_Glycan() << "\t" << Frequency_At_Length_Glycan[i] << endl;
 	}
-	
+
 	system("pause");
 	return 0;
 

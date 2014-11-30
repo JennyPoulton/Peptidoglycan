@@ -1,4 +1,3 @@
-
 #ifndef POLYMER_HEADER
 #define POLYMER_HEADER
 
@@ -43,6 +42,7 @@ private:
 	void Set_Joins();
 
 public:
+	
 	Polymer();
 
 	double Return_Energy_To_Stretch_Peptide();
