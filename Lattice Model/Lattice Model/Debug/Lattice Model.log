@@ -1,16 +1,8 @@
-﻿Build started 27/11/2014 17:32:03.
+﻿Build started 30/11/2014 19:49:33.
      1>Project "C:\Users\Jenny\Peptidoglycan\Lattice Model\Lattice Model\Lattice Model.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Polymer.cpp
-         Polymer.cpp
-     1>c:\users\jenny\peptidoglycan\lattice model\lattice model\polymer.cpp(240): warning C4715: 'Polymer::Bar_Above_Left' : not all control paths return a value
-     1>c:\users\jenny\peptidoglycan\lattice model\lattice model\polymer.cpp(257): warning C4715: 'Polymer::Bar_Above_Right' : not all control paths return a value
-     1>c:\users\jenny\peptidoglycan\lattice model\lattice model\polymer.cpp(274): warning C4715: 'Polymer::Bar_Below_Left' : not all control paths return a value
-     1>c:\users\jenny\peptidoglycan\lattice model\lattice model\polymer.cpp(291): warning C4715: 'Polymer::Bar_Below_Right' : not all control paths return a value
-     1>c:\users\jenny\peptidoglycan\lattice model\lattice model\polymer.cpp(412): warning C4715: 'Polymer::Bar_Above_LeftG' : not all control paths return a value
-     1>c:\users\jenny\peptidoglycan\lattice model\lattice model\polymer.cpp(429): warning C4715: 'Polymer::Bar_Above_RightG' : not all control paths return a value
-     1>c:\users\jenny\peptidoglycan\lattice model\lattice model\polymer.cpp(446): warning C4715: 'Polymer::Bar_Below_RightG' : not all control paths return a value
-     1>c:\users\jenny\peptidoglycan\lattice model\lattice model\polymer.cpp(463): warning C4715: 'Polymer::Bar_Below_LeftG' : not all control paths return a value
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Monomer.cpp
+         Monomer.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Jenny\Peptidoglycan\Lattice Model\Debug\Lattice Model.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Jenny\Peptidoglycan\Lattice Model\Debug\Lattice Model.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Jenny\Peptidoglycan\Lattice Model\Debug\Lattice Model.lib" /MACHINE:X86 Debug\Glycan.obj
          Debug\Main.obj
@@ -22,4 +14,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:05.62
+Time Elapsed 00:00:01.69

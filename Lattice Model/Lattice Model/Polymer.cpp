@@ -228,6 +228,16 @@ int Polymer::Bar_Above_Left(int i, int j)
 
 	for (int k = 1; k < 100; k++)
 	{
+		if (i - k < 0 )
+		{
+			return count_left;
+		}
+
+		if (j==0)
+		{ 
+			return 50;
+		}
+
 		if (Polymer1[i - k][j - 1].Return_Glycan_1_Bonds() == 1)
 		{
 			count_left++;
@@ -245,6 +255,16 @@ int Polymer::Bar_Above_Right(int i, int j)
 
 	for (int k = 1; k < 100; k++)
 	{
+		if (i + k > 99)
+		{
+			return count_left;
+		}
+
+		if (j == 0)
+		{
+			return 50;
+		}
+		
 		if (Polymer1[i + k][j - 1].Return_Glycan_2_Bonds() == 1)
 		{
 			count_left++;
@@ -262,6 +282,16 @@ int Polymer::Bar_Below_Left(int i, int j)
 
 	for (int k = 1; k < 100; k++)
 	{
+		if (i - k < 0)
+		{
+			return count_left;
+		}
+
+		if (j == 99)
+		{
+			return 50;
+		}
+		
 		if (Polymer1[i - k][j + 1].Return_Glycan_1_Bonds() == 1)
 		{
 			count_left++;
@@ -279,6 +309,16 @@ int Polymer::Bar_Below_Right(int i, int j)
 
 	for (int k = 1; k < 100; k++)
 	{
+		if (i + k >100)
+		{
+			return count_right;
+		}
+
+		if (j == 99)
+		{
+			return 50;
+		}
+		
 		if (Polymer1[i + k][j + 1].Return_Glycan_2_Bonds() == 1)
 		{
 			count_right++;
@@ -400,6 +440,16 @@ int Polymer::Bar_Above_LeftG(int i, int j)
 
 	for (int k = 1; k < 100; k++)
 	{
+		if (j - k < 0)
+		{
+			return count_left;
+		}
+
+		if (i == 0)
+		{
+			return 50;
+		}
+		
 		if (Polymer1[i - 1][j - k].Return_Glycan_1_Bonds() == 1)
 		{
 			count_left++;
@@ -417,6 +467,16 @@ int Polymer::Bar_Above_RightG(int i, int j)
 
 	for (int k = 1; k < 100; k++)
 	{
+		if (j + k > 99)
+		{
+			return count_left;
+		}
+
+		if (i == 0)
+		{
+			return 50;
+		}
+		
 		if (Polymer1[i -1][j +k].Return_Glycan_2_Bonds() == 1)
 		{
 			count_left++;
@@ -434,6 +494,17 @@ int Polymer::Bar_Below_RightG(int i, int j)
 
 	for (int k = 1; k < 100; k++)
 	{
+		if (j + k > 99)
+		{
+			return count_right;
+		}
+
+		if (i == 99)
+		{
+			return 50;
+		}
+		
+		
 		if (Polymer1[i + 1][j + k].Return_Glycan_2_Bonds() == 1)
 		{
 			count_right++;
@@ -451,6 +522,17 @@ int Polymer::Bar_Below_LeftG(int i, int j)
 
 	for (int k = 1; k < 100; k++)
 	{
+
+		if (j - k < 0)
+		{
+			return count_left;
+		}
+
+		if (i == 99)
+		{
+			return 50;
+		}
+
 		if (Polymer1[i + 1][j - k].Return_Glycan_1_Bonds() == 1)
 		{
 			count_left++;
